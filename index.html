@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- Tema oscuro global de Bootstrap: data-bs-theme="dark" -->
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de Juegos | TP13 - Bootstrap</title>
+
+  <!-- Bootstrap 5.3.8 (CSS) vinculado por CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+  <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom">
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold" href="#inicio">Gestor de Juegos</a>
+
+      <!-- Botón para desplegar el menú en pantallas chicas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#biblioteca">Biblioteca</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin de la barra de navegación -->
+
+
+  <!-- ================= CONTENIDO PRINCIPAL (container) ================= -->
+  <div class="container">
+
+    <!-- ===== Encabezado de bienvenida ===== -->
+    <header id="inicio" class="text-center py-5">
+      <h1 class="display-4 text-warning">Biblioteca de Juegos Retro</h1>
+      <p class="lead">Explorá el catálogo, mirá tu biblioteca y elegí a qué jugar.</p>
+    </header>
+    <!-- Fin del encabezado -->
+
+
+    <!-- ===== Catálogo de juegos (grilla de tarjetas) ===== -->
+    <section id="catalogo" class="py-4">
+      <h2 class="text-center text-primary mb-4">Catálogo</h2>
+
+      <!-- Grilla responsiva: 1 columna en celular, 2 en tableta, 4 en PC -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+        <!-- Juego 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-primary text-center py-5 display-4 fw-bold">T</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Tetris</h3>
+              <span class="badge text-bg-secondary">Puzzle</span>
+              <p class="text-warning mt-3 mb-0">USD 4,99</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-warning w-100">Jugar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juego 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-warning text-dark text-center py-5 display-4 fw-bold">P</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Pac-Man</h3>
+              <span class="badge text-bg-secondary">Arcade</span>
+              <p class="text-warning mt-3 mb-0">USD 3,99</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-outline-primary w-100">Instalar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juego 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-success text-center py-5 display-4 fw-bold">P</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Pong</h3>
+              <span class="badge text-bg-secondary">Deportes</span>
+              <p class="text-success mt-3 mb-0">Gratis</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-warning w-100">Jugar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juego 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-danger text-center py-5 display-4 fw-bold">S</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Space Invaders</h3>
+              <span class="badge text-bg-secondary">Shooter</span>
+              <p class="text-warning mt-3 mb-0">USD 4,99</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-outline-primary w-100">Instalar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juego 5 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-info text-dark text-center py-5 display-4 fw-bold">D</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Donkey Kong</h3>
+              <span class="badge text-bg-secondary">Plataformas</span>
+              <p class="text-warning mt-3 mb-0">USD 5,99</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-secondary w-100" disabled>Próximamente</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juego 6 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-success text-center py-5 display-4 fw-bold">S</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Snake</h3>
+              <span class="badge text-bg-secondary">Arcade</span>
+              <p class="text-success mt-3 mb-0">Gratis</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-warning w-100">Jugar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juego 7 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-secondary text-center py-5 display-4 fw-bold">A</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Asteroids</h3>
+              <span class="badge text-bg-secondary">Shooter</span>
+              <p class="text-warning mt-3 mb-0">USD 3,99</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-outline-primary w-100">Instalar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juego 8 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="bg-primary-subtle text-center py-5 display-4 fw-bold">P</div>
+            <div class="card-body">
+              <h3 class="card-title h5">Pitfall!</h3>
+              <span class="badge text-bg-secondary">Aventura</span>
+              <p class="text-warning mt-3 mb-0">USD 5,99</p>
+            </div>
+            <div class="card-footer p-3">
+              <button type="button" class="btn btn-secondary w-100" disabled>Próximamente</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Fin de la grilla de tarjetas -->
+    </section>
+    <!-- Fin del catálogo -->
+
+
+    <!-- ===== Biblioteca (tabla de datos) ===== -->
+    <section id="biblioteca" class="py-4">
+      <h2 class="text-center text-primary mb-4">Mi Biblioteca</h2>
+
+      <!-- Contenedor de la tabla: permite desplazarla en pantallas chicas -->
+      <div class="table-responsive p-4 border rounded">
+        <table class="table table-striped table-hover align-middle mb-0">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre del Juego</th>
+              <th scope="col">Género</th>
+              <th scope="col">Año</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Tetris</td>
+              <td>Puzzle</td>
+              <td>1984</td>
+              <td class="text-warning">USD 4,99</td>
+              <td><span class="badge text-bg-success">Instalado</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Pac-Man</td>
+              <td>Arcade</td>
+              <td>1980</td>
+              <td class="text-warning">USD 3,99</td>
+              <td><span class="badge text-bg-primary">Disponible</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Pong</td>
+              <td>Deportes</td>
+              <td>1972</td>
+              <td class="text-success">Gratis</td>
+              <td><span class="badge text-bg-success">Instalado</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Space Invaders</td>
+              <td>Shooter</td>
+              <td>1978</td>
+              <td class="text-warning">USD 4,99</td>
+              <td><span class="badge text-bg-primary">Disponible</span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Donkey Kong</td>
+              <td>Plataformas</td>
+              <td>1981</td>
+              <td class="text-warning">USD 5,99</td>
+              <td><span class="badge text-bg-secondary">Próximamente</span></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Snake</td>
+              <td>Arcade</td>
+              <td>1997</td>
+              <td class="text-success">Gratis</td>
+              <td><span class="badge text-bg-success">Instalado</span></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Asteroids</td>
+              <td>Shooter</td>
+              <td>1979</td>
+              <td class="text-warning">USD 3,99</td>
+              <td><span class="badge text-bg-primary">Disponible</span></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Pitfall!</td>
+              <td>Aventura</td>
+              <td>1982</td>
+              <td class="text-warning">USD 5,99</td>
+              <td><span class="badge text-bg-secondary">Próximamente</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Fin de la tabla -->
+      </div>
+      <!-- Fin div de la tabla -->
+    </section>
+    <!-- Fin de la biblioteca -->
+
+  </div>
+  <!-- Fin del container principal -->
+
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="border-top text-center p-4 mt-4">
+    <p class="mb-0 text-body-secondary">TP13 - Gestor de Juegos con Bootstrap - Laboratorio de Programación, 6° G</p>
+  </footer>
+  <!-- Fin del pie de página -->
+
+
+  <!-- Bootstrap 5.3.8 (JS): necesario para el menú desplegable del navbar -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
